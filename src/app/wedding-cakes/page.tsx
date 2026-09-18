@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import PageHeader from '@/components/PageHeader';
-import { elegantPhotos } from '@/data/gallery';
+import { elegantPhotos, weddingPhotos } from '@/data/gallery';
 
 export const metadata: Metadata = {
   title: 'Wedding Cakes',
@@ -17,16 +17,39 @@ export default function WeddingCakesPage() {
         eyebrow="Wedding cakes"
         title="Cakes for your wedding day"
         description="A wedding cake designed entirely around the two of you — your colours, your flavours, your venue."
-        image={elegantPhotos[2].src}
-        imageAlt={elegantPhotos[2].alt}
+        image={weddingPhotos[0].src}
+        imageAlt={weddingPhotos[0].alt}
       />
       <section>
         <div className="wrap">
+          {weddingPhotos.length > 0 && (
+            <div className="mb-[90px] reveal">
+              <div className="max-w-[640px] mx-auto text-center mb-12">
+                <div className="eyebrow">From a real Jezz Bakes wedding</div>
+                <h2 className="font-serif text-[clamp(1.9rem,3.2vw,2.6rem)] mb-5">Recently baked</h2>
+              </div>
+              <div
+                className={`grid gap-5 ${weddingPhotos.length > 1 ? 'grid-cols-2 max-[700px]:grid-cols-1' : 'max-w-[520px] mx-auto'}`}
+              >
+                {weddingPhotos.map((photo) => (
+                  <Image
+                    key={photo.src}
+                    src={photo.src}
+                    alt={photo.alt}
+                    width={700}
+                    height={933}
+                    className="w-full h-auto object-cover"
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+
           <div className="bg-paper-deep py-[70px] px-[60px] text-center max-w-[780px] mx-auto mb-[90px] border border-line reveal max-[760px]:py-11 max-[760px]:px-6">
-            <div className="eyebrow text-center">Currently building our wedding portfolio</div>
+            <div className="eyebrow text-center">Growing our wedding portfolio</div>
             <h2 className="font-serif text-[1.9rem] mb-[18px]">Wedding enquiries welcome</h2>
             <p className="text-ink-soft max-w-[52ch] mx-auto mb-[30px] font-light">
-              We&apos;re busy photographing our latest wedding cakes for this page — but we&apos;re already
+              We&apos;re busy photographing more of our wedding cakes for this page — but we&apos;re already
               taking wedding enquiries for this year and next. Get in touch and we&apos;ll talk through your
               date, your style and what&apos;s possible, with examples tailored to you.
             </p>

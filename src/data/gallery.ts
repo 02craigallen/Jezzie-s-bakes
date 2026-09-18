@@ -20,6 +20,11 @@ export const elegantPhotos: CakePhoto[] = [
     alt: 'Ivory buttercream cake with gold leaf, Ferrero Rocher and chocolate shards',
     category: 'elegant',
   },
+  {
+    src: '/images/cakes/elegant-hotpink-macaron-buttercream.jpg',
+    alt: 'Hot pink buttercream cake with macarons, Lindor and Ferrero Rocher',
+    category: 'elegant',
+  },
 ];
 
 export const statementPhotos: CakePhoto[] = [
@@ -61,6 +66,11 @@ export const statementPhotos: CakePhoto[] = [
   {
     src: '/images/cakes/statement-choc-chunk-drip-daddy.jpg',
     alt: 'Chocolate drip cake piled with chocolate bar chunks, "Happy Birthday Daddy" topper',
+    category: 'statement',
+  },
+  {
+    src: '/images/cakes/statement-pink-drip-16th.jpg',
+    alt: 'Pink drip cake with white chocolate buttons and Lindor, 16th birthday',
     category: 'statement',
   },
 ];
@@ -105,6 +115,28 @@ export const whimsicalPhotos: CakePhoto[] = [
     src: '/images/cakes/whimsical-penguin-ice-scene.jpg',
     alt: 'Penguin-themed fondant birthday cake with a hand-modelled ice scene, 4th birthday',
     category: 'whimsical',
+  },
+  {
+    src: '/images/cakes/whimsical-brownie-stack-strawberries.jpg',
+    alt: 'Chocolate brownie stack cake with fresh strawberries and chocolate bars, 9th birthday',
+    category: 'whimsical',
+  },
+  {
+    src: '/images/cakes/whimsical-disco-ombre-buttercream.jpg',
+    alt: 'Ombre pink and peach painted buttercream cake with gold leaf and disco balls',
+    category: 'whimsical',
+  },
+];
+
+export type WeddingPhoto = {
+  src: string;
+  alt: string;
+};
+
+export const weddingPhotos: WeddingPhoto[] = [
+  {
+    src: '/images/cakes/wedding-ivory-fresh-flowers-tiered.jpg',
+    alt: 'Three-tier ivory buttercream wedding cake with cascading fresh roses and white blooms',
   },
 ];
 
