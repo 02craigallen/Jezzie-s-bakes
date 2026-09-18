@@ -216,8 +216,8 @@ export default function HomePage() {
         <div className="wrap">
           <div className="grid grid-cols-[0.85fr_1.15fr] gap-20 items-center max-[860px]:grid-cols-1">
             <Image
-              src={elegantPhotos[3].src}
-              alt={elegantPhotos[3].alt}
+              src={elegantPhotos[2].src}
+              alt={elegantPhotos[2].alt}
               width={600}
               height={580}
               className="w-full h-[580px] max-[860px]:h-[360px] object-cover reveal"

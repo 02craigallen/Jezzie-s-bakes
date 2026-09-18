@@ -6,11 +6,6 @@ export type CakePhoto = {
 
 export const elegantPhotos: CakePhoto[] = [
   {
-    src: '/images/cakes/elegant-blush-macaron-candles.jpg',
-    alt: 'Blush buttercream cake with pastel macarons, dried flowers and lit gold candles',
-    category: 'elegant',
-  },
-  {
     src: '/images/cakes/elegant-blush-macaron-closeup.jpg',
     alt: 'Close-up of a blush buttercream cake ringed with lavender macarons and edible flowers',
     category: 'elegant',
@@ -130,5 +125,5 @@ export const secondaryPhotos: CakePhoto[] = [
   statementPhotos[2],
   whimsicalPhotos[7],
   whimsicalPhotos[3],
-  elegantPhotos[3],
+  elegantPhotos[2],
 ];
